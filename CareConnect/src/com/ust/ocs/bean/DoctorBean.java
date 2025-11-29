@@ -5,8 +5,8 @@ import java.util.Date;
 public class DoctorBean {
 	private String doctorID;
 	private String doctorName;
-	private Date dateOfBirth;
-	private Date dateOfJoining;
+	private String dateOfBirth;
+	private String dateOfJoining;
 	private String gender;
 	private String qualification;
 	private String specialization;
@@ -18,7 +18,9 @@ public class DoctorBean {
 	private String pincode;
 	private String contactNumber;
 	private String emailID;
+	
 	public String getDoctorID() {
+		
 		return doctorID;
 	}
 	public void setDoctorID(String doctorID) {
@@ -30,16 +32,16 @@ public class DoctorBean {
 	public void setDoctorName(String doctorName) {
 		this.doctorName = doctorName;
 	}
-	public Date getDateOfBirth() {
+	public String getDateOfBirth() {
 		return dateOfBirth;
 	}
-	public void setDateOfBirth(Date dateOfBirth) {
+	public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
-	public Date getDateOfJoining() {
+	public String getDateOfJoining() {
 		return dateOfJoining;
 	}
-	public void setDateOfJoining(Date dateOfJoining) {
+	public void setDateOfJoining(String dateOfJoining) {
 		this.dateOfJoining = dateOfJoining;
 	}
 	public String getGender() {
@@ -107,6 +109,14 @@ public class DoctorBean {
 	}
 	public void setEmailID(String emailID) {
 		this.emailID = emailID;
+	}
+	@Override
+	public String toString() {
+		return "DoctorBean [doctorID=" + doctorID + ", doctorName=" + doctorName + ", dateOfBirth=" + dateOfBirth
+				+ ", dateOfJoining=" + dateOfJoining + ", gender=" + gender + ", qualification=" + qualification
+				+ ", specialization=" + specialization + ", yearsOfExperience=" + yearsOfExperience + ", street="
+				+ street + ", location=" + location + ", city=" + city + ", state=" + state + ", pincode=" + pincode
+				+ ", contactNumber=" + contactNumber + ", emailID=" + emailID + "]";
 	}
 	
 	
